@@ -185,11 +185,7 @@ public class MainActivity extends Activity implements OnClickListener, OnItemSel
 		StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder().permitAll().penaltyLog().build());	//prohibit
 
 		//get preference (調べてみたらpreference名にパッケージ名が加わって違っている場合があった。ひどい)
-		if (Boolean.FALSE.equals(preference) || preference == null) {
-			preference = this.getSharedPreferences("preferences", Context.MODE_PRIVATE | Context.MODE_MULTI_PROCESS);
-		} else {
-			preference = this.getSharedPreferences(getPackageName() + "_preferences", Context.MODE_PRIVATE | Context.MODE_MULTI_PROCESS);
-		}
+		preference = this.getSharedPreferences(getPackageName() + "_preferences", Context.MODE_PRIVATE);
 
 		//category2
 		String mail_to         = preference.getString("mail_to", "");
@@ -203,8 +199,8 @@ public class MainActivity extends Activity implements OnClickListener, OnItemSel
 		String smtp_host       = preference.getString("smtp_host", "");
 		String smtp_port       = preference.getString("smtp_port", "");
 		String mail_protocol   = preference.getString("mail_protocol", "");
-		int smtp_timeout       = Integer.parseInt(preference.getString("smtp_timeout", "")) * 100;			//msec * 100 = sec
-		int connection_timeout = Integer.parseInt(preference.getString("connection_timeout", "")) * 100;	//msec * 100 = sec
+		int smtp_timeout       = Integer.parseInt(preference.getString("smtp_timeout", "10")) * 100;			//msec * 100 = sec
+		int connection_timeout = Integer.parseInt(preference.getString("connection_timeout", "10")) * 100;	//msec * 100 = sec
 		String smtp_auth       = Boolean.toString(preference.getBoolean("smtp_auth", true));
 		String smtp_ssltls     = Boolean.toString(preference.getBoolean("smtp_ssltls", true));
 
@@ -239,6 +235,7 @@ public class MainActivity extends Activity implements OnClickListener, OnItemSel
 		//build and send mail
 		try {
 			String mailBody = getMailBody(spinnerReasonResult, spinnerTimerangeResult, additionalReasonResult);
+Toast.makeText(this, mail_from ,Toast.LENGTH_LONG).show();
 
 			mimeMsg.setFrom(new InternetAddress(mail_from));
 			mimeMsg.setRecipients(Message.RecipientType.TO, new InternetAddress[]{new InternetAddress(mail_to), new InternetAddress(mail_to_cc)});

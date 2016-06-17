@@ -90,8 +90,6 @@
     <string name="smtp_tls_summary_off">STARTTLSが必要な際はチェック</string>
 
     <string name="mail_to_name_default">関係各位</string>
-    <string name="mail_from_default">ryoji.fukazawa@seattleconsulting.co.jp</string>
-    <string name="mail_to_cc_default">ryoji.fukazawa@seattleconsulting.co.jp</string>
     <string name="signature_default">-------------------\n</string>
     <string name="title_prefix_default">[勤怠]\s</string>
     <string name="host_default">smtp.gmail.com</string>
