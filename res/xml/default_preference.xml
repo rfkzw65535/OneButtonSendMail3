@@ -15,7 +15,6 @@
         <EditTextPreference
             android:key = "mail_to_cc"
             android:title = "@string/mail_to_cc"
-            android:summary = "@string/mail_to_cc_default"
         />
     </PreferenceCategory>
 
@@ -25,8 +24,7 @@
         <EditTextPreference
             android:key = "mail_from"
             android:title = "@string/mail_from_title"
-            android:summary = "@string/mail_from_default"
-            android:defaultValue = "@string/mail_from_default"
+            android:summary = "@string/mail_from_summary"
         />
         <EditTextPreference
             android:key = "account_passwd"
