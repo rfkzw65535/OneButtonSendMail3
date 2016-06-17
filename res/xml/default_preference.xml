@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key = "category2"
+        android:title = "@string/category2">
+        <EditTextPreference
+            android:key = "mail_to"
+            android:title = "@string/mail_to_title"
+        />
+        <EditTextPreference
+            android:key = "mail_to_name"
+            android:title = "@string/mail_to_name_title"
+        />
+        <EditTextPreference
+            android:key = "mail_to_cc"
+            android:title = "@string/mail_to_cc"
+            android:summary = "@string/mail_to_cc_default"
+        />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key = "category3"
+        android:title = "@string/category3">
+        <EditTextPreference
+            android:key = "mail_from"
+            android:title = "@string/mail_from_title"
+            android:summary = "@string/mail_from_default"
+            android:defaultValue = "@string/mail_from_default"
+        />
+        <EditTextPreference
+            android:key = "account_passwd"
+            android:title = "@string/account_passwd_title"
+            android:summary = "@string/account_passwd_summary"
+        />
+        <EditTextPreference
+            android:key = "firstname"
+            android:title = "@string/firstname_title"
+            android:summary = "@string/firstname_summary"
+        />
+        <EditTextPreference
+            android:key = "signature"
+            android:title = "@string/signature_title"
+            android:hint = "@string/signature_default"
+            android:defaultValue = "@string/signature_default"
+        />
+        <EditTextPreference
+            android:key = "title_prefix"
+            android:title = "@string/title_prefix_title"
+            android:summary = "@string/title_prefix_default"
+            android:hint = "@string/title_prefix_default"
+            android:defaultValue = "@string/title_prefix_default"
+        />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key = "category4"
+        android:title = "@string/category4">
+        <EditTextPreference
+            android:key = "host"
+            android:title = "@string/host_title"
+            android:summary = "@string/host_default"
+            android:hint = "@string/host_default"
+            android:defaultValue = "@string/host_default"
+        />
+        <EditTextPreference
+            android:key = "connection_timeout"
+            android:title = "@string/connection_timeout_title"
+            android:summary = "@string/connection_timeout_default"
+            android:inputType = "number"
+            android:maxLength = "2"
+            android:hint = "@string/connection_timeout_default"
+            android:defaultValue = "@string/connection_timeout_default"
+        />
+        <EditTextPreference
+            android:key = "smtp_timeout"
+            android:title = "@string/smtp_timeout_title"
+            android:summary = "@string/smtp_timeout_default"
+            android:inputType = "number"
+            android:maxLength = "2"
+            android:hint = "@string/smtp_timeout_default"
+            android:defaultValue = "@string/smtp_timeout_default"
+        />
+        <EditTextPreference
+            android:key = "smtp_host"
+            android:title = "@string/smtp_host_title"
+            android:summary = "@string/smtp_host_default"
+            android:hint = "@string/smtp_host_default"
+            android:defaultValue = "@string/smtp_host_default"
+        />
+        <EditTextPreference
+            android:key = "smtp_port"
+            android:title = "@string/smtp_port_title"
+            android:summary = "@string/smtp_port_default"
+            android:inputType = "number"
+            android:maxLength = "4"
+            android:hint = "@string/smtp_port_default"
+            android:defaultValue = "@string/smtp_port_default"
+        />
+        <EditTextPreference
+            android:key = "mail_protocol"
+            android:title = "@string/mail_protocol_title"
+            android:summary = "@string/mail_protocol_default"
+            android:hint = "@string/mail_protocol_default"
+            android:defaultValue = "@string/mail_protocol_default"
+            />
+        <CheckBoxPreference
+            android:key = "smtp_auth"
+            android:title = "@string/smtp_auth_title"
+            android:summaryOn = "@string/smtp_auth_summary_on"
+            android:summaryOff = "@string/smtp_auth_summary_off"
+            android:defaultValue = "true"
+        />
+        <CheckBoxPreference
+            android:key = "smtp_tls"
+            android:title = "@string/smtp_tls_title"
+            android:summaryOn = "@string/smtp_tls_summary_on"
+            android:summaryOff = "@string/smtp_tls_summary_off"
+            android:defaultValue = "true"
+        />
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OneButtonSendMail</string>
+
+
+    <!-- spinner -->
+    <string name="spinner_reason_label">▼理由</string>
+    <string-array name="messages_reason">
+        <item>電車遅延のため</item>
+        <item>通院のため</item>
+        <item>急病のため</item>
+        <item>諸事情により</item>
+        <item>人生に疲れたので</item>
+    </string-array>
+
+    <string name="text_additional_reason_label">▼追加説明があれば記入</string>
+    <string name="text_additional_reason">(路線、病名、事情など)</string>
+
+    <string name="spinner_timerange_label">▼遅延・休暇範囲</string>
+    <string-array name="messages_timerange">
+        <item>10分遅刻します</item>
+        <item>15分遅刻します</item>
+        <item>20分遅刻します</item>
+        <item>20～30分遅刻します</item>
+        <item>30～60分遅刻します</item>
+        <item>午前半休を頂きます</item>
+        <item>午後半休を頂きます</item>
+        <item>全休を頂きます</item>
+        <item>実家へ帰らせて頂きます</item>
+    </string-array>
+
+    <!-- main text -->
+    <string name="body1">\n\nおつかれさまです</string>
+    <string name="body2">です。\n</string>
+    <string name="body3">\n\n以上宜しくお願い致します。\n</string>
+
+    <string name="messages_copy">文面をコピー</string>
+    <string name="messages_ready">メールを送信</string>
+    <string name="messages_send">送信しました</string>
+
+    <!-- error dialog -->
+    <string name="error_title1">about [error] Auth failed</string>
+    <string name="error_message1">GMail経由の場合、OAuth2.0未対応の為「安全性の低いアプリ」としてアカウントへのアクセスがブロックされます。\n使用する際は「安全性の低いアプリのアクセス」をONにしてください。\n\nif you use this, \'access by Less secure apps\' of your google account sets ON.\n\n</string>
+    <string name="error_message1_url">https://www.google.com/settings/security/lesssecureapps</string>
+
+    <!-- menu used -->
+    <string name="opt_menu_01">設定</string>
+    <string name="opt_menu_02">使用時の注意</string>
+
+
+    <!-- preference strings -->
+    <string name="category2">送信先設定</string>
+    <string name="mail_to_title">送信先メールアドレス</string>
+    <string name="mail_to_title_summary">送信先メールアドレスを設定</string>
+    <string name="mail_to_name_title">送信先氏名</string>
+    <string name="mail_to_name_summary">送信先の名前を設定</string>
+    <string name="mail_to_cc">送信先メールアドレス(CC)</string>
+
+    <string name="category3">基本設定</string>
+    <string name="mail_from_title">送信元メールアドレス</string>
+    <string name="mail_from_summary">送信元メールアドレスを設定</string>
+    <string name="mail_from_notice">※送信元名はメールアカウント設定に依存します</string>
+    <string name="account_passwd_title">アカウントパスワード</string>
+    <string name="account_passwd_summary">アカウントパスワードを設定</string>
+    <string name="firstname_title">送信元氏名（姓のみ、本文で使用します）</string>
+    <string name="firstname_summary">送信元氏名（姓のみ）を設定</string>
+    <string name="signature_title">シグネチャー</string>
+    <string name="signature_summary">シグネチャーを設定</string>
+    <string name="title_prefix_title">タイトルヘッダ設定（[勤怠]など）</string>
+    <string name="title_prefix_summary">タイトルヘッダ設定（[勤怠]など）</string>
+
+    <string name="category4">メールアカウント設定</string>
+    <string name="host_title">ホストサーバ名</string>
+    <string name="host_summary">ホストサーバ名</string>
+    <string name="smtp_host_title">SMTPサーバ名</string>
+    <string name="smtp_host_summary">SMTPサーバ名</string>
+    <string name="smtp_port_title">SMTPサーバポート</string>
+    <string name="smtp_port_summary">SMTPサーバポート</string>
+    <string name="smtp_timeout_title">SMTPタイムアウト(秒)</string>
+    <string name="smtp_timeout_summary">SMTPタイムアウト(秒)</string>
+    <string name="connection_timeout_title">接続タイムアウト(秒)</string>
+    <string name="connection_timeout_summary">接続タイムアウト(秒)</string>
+    <string name="mail_protocol_title">プロトコル(smtp/smtps)</string>
+    <string name="mail_protocol_summary">プロトコル(smtp/smtps)</string>
+    <string name="smtp_auth_title">SMTP認証</string>
+    <string name="smtp_auth_summary_on">SMTP認証が有効</string>
+    <string name="smtp_auth_summary_off">SMTP認証が必要な際はチェック</string>
+    <string name="smtp_tls_title">STARTTLS</string>
+    <string name="smtp_tls_summary_on">STARTTLSが有効</string>
+    <string name="smtp_tls_summary_off">STARTTLSが必要な際はチェック</string>
+
+    <string name="mail_to_name_default">関係各位</string>
+    <string name="mail_from_default">ryoji.fukazawa@seattleconsulting.co.jp</string>
+    <string name="mail_to_cc_default">ryoji.fukazawa@seattleconsulting.co.jp</string>
+    <string name="signature_default">-------------------\n</string>
+    <string name="title_prefix_default">[勤怠]\s</string>
+    <string name="host_default">smtp.gmail.com</string>
+    <string name="connection_timeout_default">10</string>
+    <string name="mail_protocol_default">smtp</string>
+    <string name="smtp_timeout_default">10</string>
+    <string name="smtp_host_default">smtp.gmail.com</string>
+    <string name="smtp_port_default">587</string>
+    <string name="smtp_auth_default">true</string>
+    <string name="smtp_tls_default">true</string>
+
+</resources>

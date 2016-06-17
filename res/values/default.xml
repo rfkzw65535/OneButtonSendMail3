@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="host">smtp.gmail.com</string>
+    <string name="connection_timeout">10</string>
+    <string name="smtp_timeout">10</string>
+    <string name="smtp_host">smtp.gmail.com</string>
+    <string name="smtp_port">587</string>
+    <string name="smtp_auth">true</string>
+    <string name="smtp_tls">true</string>
+</resources>

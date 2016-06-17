@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key = "category2"
+        android:title = "@string/category2">
+        <EditTextPreference
+            android:key = "mail_to"
+            android:title = "@string/mail_to_title"
+        />
+        <EditTextPreference
+            android:key = "mail_to_name"
+            android:title = "@string/mail_to_name_title"
+        />
+        <EditTextPreference
+            android:key = "mail_to_cc"
+            android:title = "@string/mail_to_cc"
+        />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key = "category3"
+        android:title = "@string/category3">
+        <EditTextPreference
+            android:key = "mail_from"
+            android:title = "@string/mail_from_title"
+        />
+        <EditTextPreference
+            android:key = "account_passwd"
+            android:title = "@string/account_passwd_title"
+            android:inputType = "textPassword"
+        />
+        <EditTextPreference
+            android:key = "firstname"
+            android:title = "@string/firstname_title"
+        />
+        <EditTextPreference
+            android:key = "signature"
+            android:title = "@string/signature_title"
+        />
+        <EditTextPreference
+            android:key = "title_prefix"
+            android:title = "@string/title_prefix_title"
+        />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key = "category4"
+        android:title = "@string/category4">
+        <EditTextPreference
+            android:key = "host"
+            android:title = "@string/host_title"
+        />
+        <EditTextPreference
+            android:key = "connection_timeout"
+            android:title = "@string/connection_timeout_title"
+            android:inputType = "number"
+            android:maxLength = "2"
+        />
+        <EditTextPreference
+            android:key = "smtp_timeout"
+            android:title = "@string/smtp_timeout_title"
+            android:inputType = "number"
+            android:maxLength = "2"
+        />
+        <EditTextPreference
+            android:key = "smtp_host"
+            android:title = "@string/smtp_host_title"
+        />
+        <EditTextPreference
+            android:key = "smtp_port"
+            android:title = "@string/smtp_port_title"
+            android:inputType = "number"
+            android:maxLength = "4"
+        />
+        <EditTextPreference
+            android:key = "mail_protocol"
+            android:title = "@string/mail_protocol_title"
+        />
+        <CheckBoxPreference
+            android:key = "smtp_auth"
+            android:title = "@string/smtp_auth_title"
+            android:summaryOn = "@string/smtp_auth_summary_on"
+            android:summaryOff = "@string/smtp_auth_summary_off"
+        />
+        <CheckBoxPreference
+            android:key = "smtp_tls"
+            android:title = "@string/smtp_tls_title"
+            android:summaryOn = "@string/smtp_tls_summary_on"
+            android:summaryOff = "@string/smtp_tls_summary_off"
+        />
+    </PreferenceCategory>
+
+
+</PreferenceScreen>
