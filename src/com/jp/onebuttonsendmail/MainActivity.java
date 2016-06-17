@@ -235,7 +235,6 @@ public class MainActivity extends Activity implements OnClickListener, OnItemSel
 		//build and send mail
 		try {
 			String mailBody = getMailBody(spinnerReasonResult, spinnerTimerangeResult, additionalReasonResult);
-Toast.makeText(this, mail_from ,Toast.LENGTH_LONG).show();
 
 			mimeMsg.setFrom(new InternetAddress(mail_from));
 			mimeMsg.setRecipients(Message.RecipientType.TO, new InternetAddress[]{new InternetAddress(mail_to), new InternetAddress(mail_to_cc)});
